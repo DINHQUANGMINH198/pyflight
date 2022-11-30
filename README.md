@@ -9,7 +9,7 @@ pip install PyOpenGL-3.1.6-cp37-cp37m-win32.whl
 
 To run pyflight:
 
-> git clone https://github.com/hacoo/pyflight.git
+> git clone https://github.com/DINHQUANGMINH198/pyflight
 > cd pyflight/
 > python pyflight.py
 - Use the mouse to control the plane , A-D
