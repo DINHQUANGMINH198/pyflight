@@ -1,9 +1,5 @@
-# Henry Cooney
-# hacoo36@gmail.com
-#
+
 # pyflight.py
-# 21 April 2015
-#
 # PyopenGL flight simulator - viewer / interaction module
 #
 # This file contains the basic "engine" for PyFlight, a simple PyOpenGL
@@ -13,7 +9,7 @@
 # Basically, it is a very simple engine that allows the player to move
 #x around an environment.
 #
-# Running this module in python (python3.3 pyflight.py) will start the simulator.
+# Running this module in python (python pyflight.py) will start the simulator.
 #
 # Much of this code was based on work from the following sources:
 # Jim Fix - scene.py
@@ -30,7 +26,6 @@ from ctypes import *
 
 from geometry import point, vector, ORIGIN
 from quat import quat
-from controls import *
 from landscape import *
 
 from constants import *
@@ -128,20 +123,20 @@ def draw():
 
     # Altimeter
     glRasterPos(width*(2/3), height*(5/12), 1.0)
-    glutBitmapString(GLUT_BITMAP_9_BY_15, phud.getAltimeter())
+    # glutBitmapString(GLUT_BITMAP_9_BY_15, phud.getAltimeter())
 
     #Airspeed indicator
     glRasterPos(width*(1/6), height*(5/12), 1.0)
-    glutBitmapString(GLUT_BITMAP_9_BY_15, phud.getAirspeed())
+    # glutBitmapString(GLUT_BITMAP_9_BY_15, phud.getAirspeed())
 
     
     #AoA Indicator
     glRasterPos(width*(9/12), height*(7/12), 1.0)
-    glutBitmapString(GLUT_BITMAP_9_BY_15, phud.getAoA())
+    # glutBitmapString(GLUT_BITMAP_9_BY_15, phud.getAoA())
 
     #VVI
     glRasterPos(width*(9/12), height*(8/12), 1.0)
-    glutBitmapString(GLUT_BITMAP_9_BY_15, phud.getVVI())
+    # glutBitmapString(GLUT_BITMAP_9_BY_15, phud.getVVI())
 
     #The bitchin betty!
     glColor3f(1.0, 0.0, 0.0)
@@ -151,9 +146,9 @@ def draw():
     # Debuggers
     glColor3f(0.0, 1.0, 0.0)
     glRasterPos(width*(1/6), height*(7/12), 1.0)
-    glutBitmapString(GLUT_BITMAP_9_BY_15, phud.getDebug1())
+    # glutBitmapString(GLUT_BITMAP_9_BY_15, phud.getDebug1())
     glRasterPos(width*(1/6), height*(8/12), 1.0)
-    glutBitmapString(GLUT_BITMAP_9_BY_15, phud.getDebug2())
+    # glutBitmapString(GLUT_BITMAP_9_BY_15, phud.getDebug2())
 
         
     glMatrixMode(GL_PROJECTION)
@@ -304,7 +299,7 @@ def main(argc, argv):
     global width, height
 
     # initialize the window
-    clock()
+    process_time()
     glutInit(argv)
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH)
     glutInitWindowPosition(0, 20)

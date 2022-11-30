@@ -1,11 +1,6 @@
 #
 # geometry.py
-#
-# Author: Jim Fix
-# MATH 385, Reed College, Fall 2015
-#
-# Version: 01.27.15a
-#
+
 # This defines three names: 
 #
 #    point: a class of locations in 3-space

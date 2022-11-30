@@ -1,9 +1,6 @@
-# Henry Cooney
-# hacoo36@gmail.com
-#
+
 # landscape.py
-# 21 April 2015
-#
+
 # Creates a landscape using OpenGL, for use in PyFlight. Creates bumpy
 # height-mapped terrain. Based on a tutorial by Ben Humphrey (DigiBen)
 # and Jeff Molofee (Nehe):

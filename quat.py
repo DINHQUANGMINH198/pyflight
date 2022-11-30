@@ -1,11 +1,5 @@
 #
 # quat.py
-#
-# Author: Jim Fix
-# MATH 385, Reed College, Fall 2015
-#
-# Version: 01.27.15a
-#
 # This defines the class of quaternion objects, class quat.
 #
 
